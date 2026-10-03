@@ -1,3 +1,7 @@
+#include <Rcpp.h>
+#include <cmath>
+using namespace Rcpp;
+
  //' Gibbs sampler for the seed MRF model
  //'
  //' @param z Integer matrix of hidden field values
@@ -12,11 +16,6 @@
  //' @return Updated matrix after sampling
  // [[Rcpp::export]]
 
-#include <Rcpp.h>
-#include <cmath>
-using namespace Rcpp;
-
-// [[Rcpp::export]]
 IntegerMatrix gibbsSampler(IntegerMatrix z,
                            double alpha,
                            double beta,

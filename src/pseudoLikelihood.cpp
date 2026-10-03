@@ -1,3 +1,7 @@
+#include <Rcpp.h>
+#include <cmath>
+using namespace Rcpp;
+
  //' Compute Log Pseudo-Likelihood
  //'
  //' Calculates the log pseudo-likelihood for the MRF model given observations
@@ -16,10 +20,6 @@
  //' @keywords internal
  //' @noRd
  // [[Rcpp::export]]
-
-#include <Rcpp.h>
-#include <cmath>
-using namespace Rcpp;
 
 double computeLogPL(IntegerMatrix z,
                     double alpha,
