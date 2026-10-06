@@ -6,10 +6,10 @@ Authors@R: c(
            role = c("aut", "cre")),
     person("Victor", "Freguglia Sousa", email = "victorfs@unicamp.br",
            role = "ctb")
-    )
+)
 Description: Package for fitting and simulating seed-based Markov Random Field
     models with pseudo-likelihood inference and Bayesian sampling.
-License: MIT
+License: 
 Encoding: UTF-8
 LazyData: true
 Depends:
@@ -17,7 +17,10 @@ Depends:
 Imports:
     R6,
     ggplot2,
-    stats
+    stats,
+    Rcpp
+LinkingTo:
+    Rcpp
 Suggests:
     testthat
 Roxygen: list(markdown = TRUE)

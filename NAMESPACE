@@ -1,3 +1,5 @@
+useDynLib(mrfseeds, .registration = TRUE)
+
 export(imageData)
 export(seedModel)
 export(seedModelFitter)
