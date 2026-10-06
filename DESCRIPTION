@@ -5,8 +5,8 @@ Authors@R: c(
     person("Wesley", "Cabral Alves", email = "wesley_cabral_alves@hotmail.com",
            role = c("aut", "cre")),
     person("Victor", "Freguglia Sousa", email = "victorfs@unicamp.br",
-           role = c("aut", "cre"))
-)
+           role = "ctb")
+    )
 Description: Package for fitting and simulating seed-based Markov Random Field
     models with pseudo-likelihood inference and Bayesian sampling.
 License: MIT
@@ -21,4 +21,4 @@ Imports:
 Suggests:
     testthat
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
