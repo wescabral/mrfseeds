@@ -1,11 +1,24 @@
 Package: mrfseeds
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Title: Markov Random Field Models with Centrality Effects (seeds)
+Version: 1.0
+Authors@R: c(
+    person("Wesley", "Cabral Alves", email = "wesley_cabral_alves@hotmail.com",
+           role = c("aut", "cre")),
+    person("Victor", "Freguglia Sousa", email = "victorfs@unicamp.br",
+           role = c("aut", "cre"))
+)
+Description: Package for fitting and simulating seed-based Markov Random Field
+    models with pseudo-likelihood inference and Bayesian sampling.
+License: MIT
 Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 4.1.0)
+Imports:
+    R6,
+    ggplot2,
+    stats
+Suggests:
+    testthat
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
+RoxygenNote: 7.3.2
