@@ -114,40 +114,22 @@ seedFitResult <- R6::R6Class(
 
   active = list(
 
-    #' @description
-    #' Get the fitted model
-    #'
-    #' @return The `seedModel` object with fitted parameters
+    #' @field model The `seedModel` object with fitted parameters
     model = function() private$.model,
 
-    #' @description
-    #' Get the log pseudo-likelihood at convergence
-    #'
-    #' @return Numeric. The log-PL value.
+    #' @field logPL The log-PL value.
     logPL = function() private$.logPL,
 
-    #' @description
-    #' Get the convergence status
-    #'
-    #' @return Integer. 0 = converged, non-zero = failed
+    #' @field convergence 0 = converged, non-zero = failed
     convergence = function() private$.convergence,
 
-    #' @description
-    #' Get the parameter estimates
-    #'
-    #' @return A named numeric vector with alpha, beta, delta1, delta2, ...
+    #' @field estimates A named numeric vector with alpha, beta, delta1, delta2, ...
     estimates = function() private$.estimates,
 
-    #' @description
-    #' Get the image used for fitting
-    #'
-    #' @return The `imageData` object
+    #' @field image The `imageData` object
     image = function() private$.image,
 
-    #' @description
-    #' Get the fitted seeds
-    #'
-    #' @return A list of seed specifications with fitted delta values
+    #' @field seeds A list of seed specifications with fitted delta values
     seeds = function() private$.seeds
   ),
 

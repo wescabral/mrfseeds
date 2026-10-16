@@ -162,50 +162,32 @@ imageData <- R6::R6Class("imageData",
 
   active = list(
 
-    #' @description
-    #' Get the underlying matrix
-    #'
-    #' @return The numeric matrix
+    #' @field matrix The numeric matrix
     matrix = function() {
       private$.dataMatrix
     },
 
-    #' @description
-    #' Get the dimensions of the image
-    #'
-    #' @return A numeric vector of length 2: c(nrow, ncol)
+    #' @field dim A numeric vector of length 2: c(nrow, ncol)
     dim = function() {
       private$.dim
     },
 
-    #' @description
-    #' Get the set of unique values (for discrete data)
-    #'
-    #' @return A vector of unique values, or `NULL` for continuous data
+    #' @field valueSet A vector of unique values, or `NULL` for continuous data
     valueSet = function() {
       private$.valueSet
     },
 
-    #' @description
-    #' Get the number of colors/classes (for discrete data)
-    #'
-    #' @return An integer representing the number of unique values, or `NA` for continuous data
+    #' @field ncolors An integer representing the number of unique values, or `NA` for continuous data
     ncolors = function() {
       private$.ncolors
     },
 
-    #' @description
-    #' Check if the data is continuous
-    #'
-    #' @return Logical
+    #' @field continuous Logical
     continuous = function() {
       private$.continuous
     },
 
-    #' @description
-    #' Get the range of values in the image
-    #'
-    #' @return A numeric vector of length 2: c(min, max)
+    #' @field valueRange A numeric vector of length 2: c(min, max)
     valueRange = function() {
       private$.valueRange
     }
