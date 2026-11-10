@@ -1,3 +1,9 @@
 .Rproj.user
-
-/.quarto/
+.Rhistory
+.RData
+.Ruserdata
+.positai
+*.o
+*.so
+*.dll
+*.dylib

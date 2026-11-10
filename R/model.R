@@ -37,10 +37,10 @@ seedModel <- R6::R6Class(
     #' @description
     #' Initialize a seed model
     #'
-    #' @param alpha Numeric. The uniformity parameter. It controls the attraction between 
+    #' @param alpha Numeric. The uniformity parameter. It controls the attraction between
     #'   neighboring pixels. Higher parameters make it to smoother images.
     #' @param beta Numeric. The global background class/color strength. Higher values lead to
-    #'   a image that favors the background color. 
+    #'   a image that favors the background color.
     #' @param seeds A list of seed specifications. Each seed is a list with:
     #'   - `position`: numeric vector of length 2, c(x, y) coordinates
     #'   - `color`: integer, the preferred color/category at this seed
@@ -98,26 +98,17 @@ seedModel <- R6::R6Class(
 
   active = list(
 
-    #' @description
-    #' Get the alpha parameter
-    #'
-    #' @return Numeric. The global uniformity parameter.
+    #' @field alpha The global uniformity parameter.
     alpha = function(){
       private$.alpha
     },
 
-    #' @description
-    #' Get the beta parameter
-    #'
-    #' @return Numeric. The background class (color) penalty/favor.
+    #' @field beta The background class (color) penalty/favor.
     beta = function(){
       private$.beta
     },
 
-    #' @description
-    #' Get the seeds
-    #'
-    #' @return A list of seed specifications.
+    #' @field seeds A list of seed specifications.
     seeds = function(){
       private$.seeds
     }

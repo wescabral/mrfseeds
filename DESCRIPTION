@@ -6,7 +6,7 @@ Authors@R: c(
            role = c("aut", "cre")),
     person("Victor", "Freguglia Sousa", email = "victorfs@unicamp.br",
            role = "ctb")
-)
+  )
 Description: Package for fitting and simulating seed-based Markov Random Field
     models with pseudo-likelihood inference and Bayesian sampling.
 License: 
@@ -24,4 +24,4 @@ LinkingTo:
 Suggests:
     testthat
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
+Config/roxygen2/version: 8.1.1
